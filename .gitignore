@@ -4,11 +4,9 @@
 # Environment variables
 .env
 
-# Python cache
+# Python
 __pycache__/
 *.pyc
-
-# Jupyter
 .ipynb_checkpoints/
 
 # macOS
@@ -16,3 +14,7 @@ __pycache__/
 
 # Logs
 logs/*.log
+
+# Dataset files
+/data/raw/*.csv
+/data/processed/*.csv
