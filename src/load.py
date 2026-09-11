@@ -18,10 +18,10 @@ PROCESSED_DIR = BASE_DIR / "data" / "processed"
 # ============================================================
 
 connection = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Lahari143@",
-    database="olist_analytics"
+    host=os.getenv("MYSQL_HOST"),
+    user=os.getenv("MYSQL_USER"),
+    password=os.getenv("MYSQL_PASSWORD"),
+    database=os.getenv("MYSQL_DATABASE")
 )
 
 cursor = connection.cursor()
